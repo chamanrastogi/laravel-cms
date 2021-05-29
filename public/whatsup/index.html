@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Floating WhatsApp Button Demo</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="floating-wpp.css">
+    <script type="text/javascript" src="floating-wpp.js"></script>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif
+        }
+    </style>
+</head>
+
+<body>
+    <div id="myButton"></div>
+</body>
+
+<script type="text/javascript">
+    $(function () {
+        $('#myButton').floatingWhatsApp({
+            phone: '+917906254806',
+            popupMessage: 'Hello, how can we help you?',
+            message: "",
+            showPopup: true,
+            position:'left',			
+			showOnIE:true,
+			autoOpenTimer: 0,
+			headerColor:'#009688',
+			zIndex: 0,
+            headerTitle: 'Welcome to Adit24x7!',
+            backgroundColor:'crimson',
+            buttonImage: '<img src="whatsapp.svg" />'
+        });
+    });
+</script>
+
+</html>
